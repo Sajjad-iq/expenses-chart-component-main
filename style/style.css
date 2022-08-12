@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    /* Neutral */
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    Font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+    min-height: 100vh;
+}
+
+
+.header {
+    min-width: 375px;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    background-color: var(--Soft-red);
+    border-radius: 15px;
+    color: var(--Very-pale-orange);
+}
+
+img {
+    width: 60px;
+}
+
+.header .balance * {
+    padding: 2px;
+}
+
+.balance p {
+    font-size: 14px;
+}
+
+.balance h3 {
+    font-size: 25px;
+}
+
+
+
+.content {
+    background-color: var(--Very-pale-orange);
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 15px;
+    color: var(--Dark-brown);
+}
+
+.content h3 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.content .spending-view {
+    height: 150px;
+}
+
+.spending-view {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.spending-view .spending-div-inside {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.spending-div-inside .shape {
+    width: 40px;
+    background-color: var(--Soft-red);
+    border-radius: 8px;
+    transition: 1.5s;
+}
+
+.spending-div-inside .continer {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.continer p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--Soft-red);
+    opacity: 0.3;
+}
+
+.content .footer-div {
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-div p {
+    color: var(--Medium-brown);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.last-mon-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
